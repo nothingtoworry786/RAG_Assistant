@@ -1,0 +1,27 @@
+[project]
+name = "backend-python"
+version = "0.1.0"
+description = "Python port of NotebookLMAssignment Express backend (RAG ingest + Supabase/pgvector + Groq)."
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.136.1",
+    "groq>=1.2.0",
+    "httpx>=0.28.1",
+    "pypdf>=6.11.0",
+    "python-dotenv>=1.2.2",
+    "python-multipart>=0.0.27",
+    "uvicorn[standard]>=0.46.0",
+]
+
+[project.scripts]
+notebooklm-api = "app.main:run"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[tool.uv]
+package = true
