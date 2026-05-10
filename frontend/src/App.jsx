@@ -3,7 +3,7 @@
 import { useState } from "react";
 import UploadPanel from "./components/UploadPanel.jsx";
 import ChatPanel from "./components/ChatPanel.jsx";
-import "./app.css";
+import "./App.css";
 
 export default function App() {
   const [docId, setDocId] = useState(null);
