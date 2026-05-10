@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+backend_python/.venv/
+frontend/node_modules/
+
+# Environment variables
+.env
+backend/.env
+backend_python/.env
+supabase/.temp/
+frontend/.env
+
+# Build output
+frontend/dist/
+frontend/.vite/
+
+# Misc
+.DS_Store
+*.log
+npm-debug.log*
+
+# Generated files
+generate-pdf.mjs
